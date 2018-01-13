@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<head>
+	<script type="text/javascript">
+		// Spread
+		const oldArray = [1,7,4,14];
+		const newArray = [...oldArray, 21,35];
+
+		console.log(oldArray); // returns 1, 7, 4, 14
+		console.log(newArray); // returns 1, 7, 4, 14, 21, 35
+
+		// Ex. 2
+		const person = {
+			name: 'Mike'
+		};
+
+		const newPerson = {
+			...person,
+			age: 28
+		}
+
+		console.log(newPerson);
+
+		// Rest
+		const filter = (...args) => {
+			return args.filter(el => el === 1);
+		}
+
+		console.log(filter(1,2,3));
+	</script>
+</head>
+<body>
+</body>
