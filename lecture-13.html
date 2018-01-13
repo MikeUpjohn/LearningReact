@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<head>
+	<script type="text/javascript">
+		const printMyName = (name) => {
+			console.log(name);
+		}
+
+		// No brackets for parameters
+		// const printMyName = name => {
+		// 	console.log(name);
+		// }
+
+		const printStaticName = () => {
+			console.log('Tom');
+		}
+
+		const printNameAndAge = (name, age) => {
+			console.log(name + ' ' + age);
+		}
+
+		// For simple return, ommit return and brackets as below.
+		// This way below, still works though...
+		// const multiply = (number) => {
+		// 	return number * 2;
+		// }
+
+		const multiply = number =>  number * 2;
+
+		printMyName('Mike');
+		printStaticName();
+		printNameAndAge('Mike', 26);
+		console.log(multiply(2));
+	</script>
+</head>
+<body>
+</body>
