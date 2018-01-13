@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<head>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/react/15.6.1/react.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/react/15.6.1/react-dom.min.js"></script>
+	<style>
+		.person {
+		  display:inline-block;
+		  margin:10px;
+		  border:1px solid #EEE;
+		  box-shadow:0 2px 2px #CCC;
+		  width:200px;
+		  padding:20px;
+		}
+	</style>
+	<script type="text/javascript">
+		/** NB This code does not run in the browser **/
+		function Person(props) {
+		  return (
+		    <div className="person">
+		      <h1>{props.name}</h1>
+		      <p>Your Age: {props.age}</p>
+		    </div>
+		  );
+		}
+
+		var app = (
+		  <div>
+		    <Person name="Mike" age="28" />
+		    <Person name="Andy" age="29" />
+		  </div>
+		);
+
+		ReactDOM.render(app,document.querySelector('#app'));
+	</script>
+</head>
+<body>
+	<div id="app">
+	  
+	</div>
+</body>
