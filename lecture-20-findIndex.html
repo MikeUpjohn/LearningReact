@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<head>
+	<script type="text/javascript">
+		// .findIndex() - returns the FIRST array index that satisfies the conditions
+
+		// EXAMPLE 1 
+		const array1 = [5, 12, 8, 130, 44];
+
+		function findFirstLargeNumber(element) {
+			return element > 13;
+		}
+
+		console.log(array1.findIndex(findFirstLargeNumber));
+
+		// EXAMPLE 2
+		function isPrime(element, index, array) {
+			const start = 2;
+
+			while(start <= Math.sqrt(element)) {
+				if(element % start++ < 1) {
+					return false;
+				}
+			}
+
+			return element > 1;
+		}
+
+		const array2 = [4, 6, 8, 12];
+		const array3 = [4, 6, 7, 12];
+
+		console.log(array2.findIndex(isPrime));
+		console.log(array3.findIndex(isPrime));
+	</script>
+</head>
+<body>
+</body>
